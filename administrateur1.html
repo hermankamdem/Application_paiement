@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>vous etes vacataire</title>
+	<style type="text/css">
+		.s{font-family: algerian; size: 44px; background-color: yellow;padding-left: 41px;padding-right:41px; padding-top: 51px;padding-bottom: 20px;border-bottom-left-radius: 8px; border-bottom-right-radius: 8px}
+		div{font-family: algerian; size:28px; color: #aa00ff}
+		input{background-color: #ffbbaf ;color: red;font-style: oblique; font-size: 20px;font-weight: bold}
+		button{background-color: #aabbaf ;color: red;font-style: oblique; font-size: 20px;font-weight: bold}
+		#ss{background-color: #aa0;color: indigo;font-weight: bold;}
+	</style>
+</head>
+<body background="tchonang.jpeg">
+	<center>
+	<dfn style="cursor: pointer;color: magenta;font-size:40px " class="s">
+	     enregistrez un comptable
+    </dfn><br><br><br><br><br>
+	<script type="text/javascript">
+
+		 function verifier() {
+		 	a=document.ens.nom.value;
+		 	b=document.ens.prenom.value;d="thib";e="THIB";
+		 	c=document.ens.code.value;
+		 	f=document.ens.id.value;
+		 	if ((a!='')&&(b!='')&&(c!='')&&(f!='')) 
+		 	{
+		 		er=true;
+		 	} 
+		 	else 
+		 		{alert("veillez entrer tout les information");er=false;}
+		 	return er;
+		   }
+	</script>
+	<div style="display: grid;grid-template-columns: 1fr 2fr 1fr  ">
+		<div></div>
+		<div style=" background-color: turquoise; margin-top: 80px;">
+			<form method="POST" action="traitement.php" onsubmit="return verifier()" name="ens"><center>
+				<table>
+					<tr>
+						<td>
+							 nom &nbsp
+						</td>
+						<td>
+							
+	 		<input type="text" name="nom"><div id="cause"></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							 prenom &nbsp
+						</td>
+						<td>
+						<input type="text" name="prenom">	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							identifiant &nbsp
+						</td>
+						<td>
+							
+	 		  <input type="text" name="id">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							age &nbsp
+						</td>
+						<td>
+							<input type="text" maxlength="3" name="age">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							sexe: &nbsp
+						</td>
+						<td>
+							m<input type="radio" name="sexe" value="M"> f<input type="radio" name="sexe" value="F">
+						</td>
+					</tr>
+	 		        <tr>
+						<td>
+							code de service &nbsp
+						</td>
+						<td>
+							 <input type="text" name="code"><br>
+						</td>
+					</tr> 
+	 		 
+	 		  
+	 		
+               <tr>
+               	<td>
+               		<input type="submit" value="enregistrer" id="ss"></center>
+	 	  
+               	</td>
+               	<td>
+               		
+			<button class="but" onclick="window.location.href='administrateur.html'">
+				retour
+			</button>
+		
+               	</td>
+               </tr>
+	 		    </table>
+	 	</form>
+		</div>
+		<div></div>
+	</div>
+</center>
+</body>
+</html>

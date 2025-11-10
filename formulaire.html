@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>mon formulaire </title>
+	 <link rel="stylesheet" href="form.css" type="text/css">
+	 <script type="text/javascript" src="form.js"></script>
+	</script>
+	<script type="text/javascript">
+	function confirm() {
+		document.f.cpass.value=document.f.pass.value;
+		 document.bgColor='red';
+		 document.getElementById('red').style.backgroundColor='red';
+
+	}
+	function cer() {
+		this.style="hover{background-color: red}";
+	}
+</script>
+	
+</head>
+<body>
+	<center>
+	<h1 id="id">
+		enregistrement
+	</h1>
+	
+		<form name="f" action="inscriptin.php" method="post">
+			<table border="0" bgcolor="white" id="ta">
+				<tr>
+					<td>
+						nom
+					</td>
+					<td>
+						<input class="in" type="text" name="nom">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						prenom
+					</td>
+					<td>
+						<input class="in" type="text" name="pnom">
+					</td>
+					
+				</tr>
+				</tr>
+				<tr>
+					<td>
+						identifiant
+					</td>
+					<td>
+						<input class="in" type="text" name="id">
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						adresse
+					</td>
+					<td>
+						<input class="in" type="text" name="adres" onmouseover="cer()">
+					</td>
+				</tr>
+				<tr>
+					
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ville de residense 
+					</td>
+					<td>
+						<input class="in" type="text" name="ville">
+					</td>
+				</tr>
+				<tr>
+				        <td>
+						mot de pass
+					    </td>
+						<td>
+						<input class="in" type="password" name="pass"  oninput="confirm()">
+					    </td>
+				    </tr>
+				<tr>
+					<td>
+						confirmation du mot de pass
+					</td>
+					<td>
+						<input class="in" type="text" name="cpass"  onfocus="this.blur()" style="background-color: #aaf">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						date de naissance
+					</td>
+					<td>
+						AA: <input class="in" type="text" name="dateA" size="3" maxlength="4"> 
+						MM: <input type="text" class="in" name="dateM" size="1" maxlength="2">
+						JJ: <input type="text" class="in" name="dateJ" size="1" maxlength="2">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						nomdre d'heure par mois
+					</td>
+					<td>
+						<select id="hh" name="heure" style="font-weight: bold; color:magenta">
+	 			<script type="text/javascript">
+	 				for (i = 5; i < 54; i++) {
+	 					document.write("<option>"+i+"</option>");
+	 				}
+	 			</script></select>H
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b> sexe</b>
+					</td>
+					<td>
+						<label>
+							feminin<input class="in" type="radio" name="s" value="F">
+						</label> 
+						<label >
+							masculin<input class="in" type="radio" name="s" value="M">
+						</label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b> grade</b>
+					</td>
+					<td>
+						<label>
+							doctora<input class="in" type="radio" name="d" value="doctora">
+						</label> 
+						<label>
+							master 2<input class="in" type="radio" name="d" value="master 2">
+						</label>
+						<label>
+							licence 2<input class="in" type="radio" name="d" value="licence 2">
+						</label>
+						<label>
+							licence<input class="in" type="radio" name="d" value="licence">
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b> statut </b>
+					</td>
+					<td>
+						<label>
+							permanant<input class="in" type="radio" name="st" value="permanant">
+						</label> 
+						<label>
+							vacataire<input class="in" type="radio" name="st" value="vacataire">
+						</label>
+				    </td>
+				</tr>
+				<tr>
+					<td>
+						<b>matiere enseigner</b>
+					</td>
+					<td>
+						<select name="poste">
+							<option>economie</option>
+							<option>science</option>
+							<option>physique</option>
+							<option>mathematique</option>
+							<option>biologie</option>
+							<option>chime</option>
+							<option>biochimie</option>
+							<option>anglais</option>
+							<option>francais</option>
+							<option>comptabilite</option>
+							<option>comptabilite generale</option>
+							<option>comptabilite analitique</option>
+							<option>statistique</option>
+							<option>mathematique industrielle</option>
+							<option>mathematique general</option>
+
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center>
+							<a href="suprimer.html">
+								<input class="on" type="button" value="suprimer" onclick="confirm();" id="red" onclick="cer()">
+							</a>
+						<input class="on" type="submit" value="envoyer" onclick="resolution();" id="b">
+						</center>
+					</td>
+					<td>
+						<center>
+						<input class="on" type="reset" value="effacer" id="bs">
+					</center>
+					</td>
+				</tr>
+                     				
+			</table>
+			
+		</form>
+	</center>
+
+</body>
+</html>

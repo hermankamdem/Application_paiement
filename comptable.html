@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>vous etes comptable</title>
+	<style type="text/css">
+		.s{font-family: algerian; background-color: blue;padding-left: 41px;padding-right:41px; padding-top: 51px;padding-bottom: 20px;border-bottom-left-radius: 8px; border-bottom-right-radius: 8px}
+		div{font-family: algerian; size:28px; color: #ff00ff}
+		input{background-color: #aabbaf ;color: blue;font-style: oblique; font-size: 20px;font-weight: bold}
+		#ss{background-color: #ff0;color: blue;font-weight: bold;}
+	</style>
+</head>
+<body background="kamdem.jpg">
+	<center>
+	<dfn style="cursor: pointer;color: magenta;font-size:30px " class="s">
+	     authantifier vous pour accede a l'aplication
+    </dfn><br><br><br><br><br>
+    <script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		   function ess() {
+		   	$.post(
+		   		'conect.php',
+		   		{
+		   			nom: $('.nom').val(),
+		   			id: $('.id').val(),
+		   		},
+		   		function(data){tem=data;console.log(tem);
+		   			if (data=='Ok'){window.location.href='index1.html'}else{alert("Vous n'ete pas dans notre base de donnees faites vous enregistrer par l'administrateur")}
+		   		}
+		   		);
+		   }
+		 function verifier() {
+		 	a=document.ens.nom.value;
+		 
+		 	f=document.ens.id.value;
+		 	if ((a!='')&&(f!='')) 
+		 	{
+		 		ess();
+		 	} 
+		 	else 
+		 		{alert("veillez entrer toute les information");er=false;}
+		 	return er;
+		   };
+	</script>
+	<div style="display: grid;grid-template-columns: 1fr 2fr 1fr  ">
+		<div></div>
+		<div style=" background-color: turquoise; margin-top: 80px;">
+			<form method="POST" action="traitement2.php" onsubmit="return verifier()" name="ens"><center>
+	 		 nom &nbsp<input type="text" name="nom" class="nom"><br><br><div id="cause">
+	 		  identifiant &nbsp<input type="text" name="id" class="id"><br><br>
+	 		
+
+	 		<input type="button" value="Connecter" id="ss" onclick="verifier()"></center>
+	 	</form>
+		</div>
+		<div></div>
+	</div>
+</center>
+</body>
+</html>

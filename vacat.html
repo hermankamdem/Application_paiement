@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vous etes vacataire</title>
+	<style type="text/css">
+		.s{font-family: algerian; background-color: blue;padding-left: 41px;padding-right:41px; padding-top: 51px;padding-bottom: 20px;border-bottom-left-radius: 80px; border-bottom-right-radius: 80px;position: relative 100px;}
+         div{font-family: algerian; font-size: 23px; color: blue}
+         input{background-color: #faa;font-family: algerian; font-size: 19px}
+         select{background-color: #faaffa;font-family: algerian;  font-size: 19px}
+         body{background-image: url(tchonang.jpeg); background-repeat: no-repeat;background-size: 100%; }
+	</style>
+</head>
+<body>
+	<center>
+	<dfn style="cursor: pointer;color: white;font-size:21px " class="s">
+	     entrez ces information pour calculer le salaire d'un professeur vacataire
+    </dfn><br><br><br><br><br>
+	<script type="text/javascript">
+		var b;
+		function alt() {
+		 	a=confirm('Voulez-vouz vraiment changer le salaire en '+document.getElementById('sal').options[document.getElementById('sal').selectedIndex].text+' ?');
+		 	if (a==true){} else {document.getElementById('sal').selectedIndex=b;}
+	 			console.log(document.getElementById('sal').options[document.getElementById('sal').selectedIndex].text);
+		 	return b;
+		 }
+		 function alt1() {
+		 	a=confirm("Voulez-vouz vraiment changer l'heure en "+document.getElementById('hh').options[document.getElementById('hh').selectedIndex].text+" ?");
+		 	if (a==true){} else {document.getElementById('hh').selectedIndex=b;}
+	 			console.log(document.getElementById('hh').options[document.getElementById('sal').selectedIndex].text);
+		 	return b;
+		 }
+		 function verifier() {
+		 	a=[document.ens.nom.value,document.ens.prenom.value];
+		 	for (i = 0; i < a.length; i++) {
+		 	if (a[i]==''||a[i]==undefined) {
+		 		document.getElementById('cause').inn
+		 		c=false;
+		 		break
+		 	}else{c=true}
+		 	}
+		 	return c;
+		 }
+	</script>
+	<div style="display: grid;grid-template-columns: 1fr 2fr 1fr  ">
+		<div>
+			<a href="evolsal.html" >
+			<img src="gauche.gif" align="bottom" height="90px" width="120px">
+			</a>
+		</div>
+		<div style=" background-color: turquoise; margin-top: 80px;">
+			<form method="GET" action="gestion vacataire.php" onsubmit="return verifier()" name="ens">
+				<table>
+					<tr>
+						<td>nom &nbsp</td>
+						<td>
+								<input type="text" name="nom"><br><div id="cause">
+						</td></tr>
+						<tr>
+							<td>
+								 prenom &nbsp
+							</td>
+							<td>
+								<input type="text" name="prenom"><br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								 nombre d'heure effectuées ce mois
+							</td>
+							<td>
+								<select id="hh" onchange="alt1()" name="heure">
+	 			<script type="text/javascript">
+	 				for (i = 1; i < 33; i++) {
+	 					document.write("<option>"+i+"h</option>");
+	 				}
+	 			</script></select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								 taux horaire
+							</td>
+							<td> <select id="sal" onchange="alt()" name="salaire">
+	 			<script type="text/javascript">
+	 				i=500;
+	 				while(i <= 10000) {
+	 					document.write("<option>"+i+" fcfa</option>");
+	 					i=i+500;
+	 					console.log(document.getElementById('sal').options[document.getElementById('sal').selectedIndex].text);
+		 	setInterval(function(){
+		 	b=document.getElementById('sal').selectedIndex;
+		 },1000)
+	 				}
+	 			</script>
+	 		</select><br>
+								
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2">
+								<input type="submit" value="enregistrer">
+							</th>
+						</tr>
+	 		 
+	 		 
+	 		
+	 		
+	 		
+	 		
+            
+           
+	 		
+	 	</table>
+	 	</form>
+		</div>
+		<div></div>
+	</div>
+</center>
+</body>
+</html>

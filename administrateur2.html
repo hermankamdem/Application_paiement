@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vous etes administrateur</title>
+	<style type="text/css">
+		.s{font-family: algerian; size: 44px;
+		 background-color: blue;
+			padding-left: 41px;
+			padding-right:41px; padding-top: 51px;
+			padding-bottom: 20px;border-bottom-left-radius: 8px; 
+			border-bottom-right-radius: 8px}
+		div{font-family: algerian; 
+			font-size:28px; 
+			color: #ff00ff}
+		input{background-color: #aabbaf;
+		 color: blue;
+		 font-style: oblique; 
+		 font-size: 20px;
+		 font-weight: bold}
+		 button{background-color: #aabbaf;
+		 color: red;
+		 font-style: oblique; 
+		 font-size: 20px;
+		 font-weight: bold}
+		#ss{background-color: #ff0;
+			color: blue;
+			font-weight: bold;}
+	</style>
+</head>
+<body background="images.jpeg">
+	<center>
+	  <dfn style="cursor: pointer;color: magenta;font-size:40px " class="s">
+	     suprimer un comptable de la base de donne
+      </dfn><br><br><br><br><br>
+	  <script type="text/javascript">
+
+		 function verifier() {
+		 	a=document.ens.nom.value;
+		 	b=document.ens.id.value;
+		 	if ((a!='')&&(b!=''))
+		 	{
+		 		
+		 	} 
+		 	else 
+		 		{alert("veillez entrer les information");er=false;}
+		 	return er;
+		   }
+	 </script>
+	   <div style="display: grid;grid-template-columns: 1fr 2fr 1fr  ">
+		    <div></div>
+		 <div style=" background-color: turquoise; margin-top: 80px;">
+		 	<b style="color: blue">entrez l'identifiant du comptable que vous voulez suprimer</b>
+			<form method="POST" action="traitement sup2.php" onsubmit="return verifier()" name="ens"><center>
+				<table>
+					<tr>
+						<td>
+						nom &nbsp	
+						</td>
+						<td>
+							<input type="text" name="nom"><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							identifiant &nbsp
+						</td>
+						<td>
+							 <input type="text" name="id"><br><br><div id="cause"></div>
+						</td>
+					</tr>
+				    <tr>
+						
+						<td align="center">
+							 <input type="submit" value="suprimer" id="ss">
+						</td>
+						<td>
+							<a href="administrateur.html">
+								<button>
+									retour
+								</button>
+							</a>
+						</td>
+					</tr>
+	 		
+	 		
+	 		
+
+	 		   </center>
+	 		</table>
+	 	    </form>
+		 </div>
+		   <div></div>
+	    </div>
+    </center><br><br><br><br>

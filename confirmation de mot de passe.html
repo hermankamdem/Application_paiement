@@ -1,0 +1,18 @@
+<html>
+<head>
+<title></title>
+<script type="text/javascript">
+	function confirm() {
+		document.f1.cmp.value=document.f1.mp.value;
+	}
+</script>
+</head>
+<body>
+	<center><input type="text" value="Bienvenue" readonly="0"><br>
+		<input type="text" value="Moi" onfocus="this.blur()"></center>
+		<form name="f1">
+			<center>Mot de passe:&nbsp<input type="password" name="mp" oninput="confirm()"><br>
+				Confirmation:&nbsp<input type="text" name="cmp" readonly="0"></center>
+		</form>
+</body>
+</html>

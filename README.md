@@ -481,14 +481,13 @@ Ce projet est destiné à un usage interne au sein de l'institution éducative. 
 
 ## 👤 Auteur
 
-**Développé par** : Équipe de développement  
-**Institution** : [À compléter]  
-**Date de création** : [À compléter]  
+**Développé par** : Herman kamdem   
+**Date de création** : [07-05-2022]  
 **Dernière mise à jour** : 13 novembre 2025
 
 ### Contacts
-- **Email** : [À compléter]
-- **Téléphone** : [À compléter]
+- **Email** : [hermankamdem536@gmail.com]
+- **Téléphone** : [+237 655661310]
 - **Support** : [À compléter]
 
 ---
